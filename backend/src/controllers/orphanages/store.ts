@@ -11,7 +11,7 @@ interface IOrphanage {
     about: string;
     instructions: string;
     opening_hours: string;
-    open_on_weekends: boolean;
+    open_on_weekends: string;
 }
 
 export default async (req: Request, res: Response) => {
@@ -25,6 +25,7 @@ export default async (req: Request, res: Response) => {
 
     const data = {
         ...reqBody,
+        open_on_weekends: reqBody.open_on_weekends == 'true', 
         images
     }
 
