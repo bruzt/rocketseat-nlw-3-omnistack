@@ -98,7 +98,7 @@ export default function CreateOrphanage() {
                         <legend>Dados</legend>
 
                         <Map
-                            center={[-27.2092052, -49.6401092]}
+                            center={[-22.4746482, -47.458847]}
                             style={{ width: '100%', height: 280 }}
                             zoom={15}
                             onclick={(event) => setLatLng(event.latlng)}
@@ -160,7 +160,7 @@ export default function CreateOrphanage() {
                                 id='image[]' 
                                 multiple 
                                 type="file" 
-                                accept="image/png,image/gif,image/jpeg"
+                                accept="image/png, image/gif, image/jpeg"
                                 onChange={handleSelectFiles}
                             />
 
